@@ -12,7 +12,7 @@ const defaultFormFields = {
 };
 
 import "./sign-in-form.styles.scss";
-import Button from "../button/button.component.jsx";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component.jsx";
 
 const SignInForm = () => {
   const [formFileds, setFormFields] = useState(defaultFormFields);
@@ -54,8 +54,8 @@ const SignInForm = () => {
 
   return (
     <div className="sign-up-container">
-      <h2> Alredy have an account ? </h2>{" "}
-      <span> Sign in with your email and password </span>{" "}
+      <h2> Alredy have an account ? </h2>
+      <span> Sign in with your email and password </span>
       <form onSubmit={handleFormSubmit}>
         <FormInput
           label="Email"
@@ -74,12 +74,16 @@ const SignInForm = () => {
           value={password}
         />
         <div className="buttons-container">
-          <Button type="Submit"> Sign In </Button>{" "}
-          <Button type="button" buttonType="google" onClick={signInWithGoogle}>
-            Google Sign In{" "}
-          </Button>{" "}
-        </div>{" "}
-      </form>{" "}
+          <Button type="Submit"> Sign In </Button>
+          <Button
+            type="button"
+            buttonType={BUTTON_TYPE_CLASSES.google}
+            onClick={signInWithGoogle}
+          >
+            Google Sign In
+          </Button>
+        </div>
+      </form>
     </div>
   );
 };
