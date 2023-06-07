@@ -12,7 +12,7 @@ const defaultFormFields = {
   confirmPassword: "",
 };
 
-import "./sign-up-form.styles.scss";
+import { SignInContainer } from "../sign-in-form/sign-in-form.styles.jsx";
 import Button from "../button/button.component.jsx";
 
 const SignUpForm = () => {
@@ -54,7 +54,7 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
+    <SignInContainer>
       <h2>Don't have an account?</h2>
       <span>Sight up with your email and password</span>
       <form onSubmit={handleFormSubmit}>
@@ -96,7 +96,7 @@ const SignUpForm = () => {
 
         <Button type="Submit">Sign Up</Button>
       </form>
-    </div>
+    </SignInContainer>
   );
 };
 
