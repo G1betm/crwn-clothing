@@ -6,15 +6,12 @@ import { store } from "./store/store.js";
 
 import "./index.scss";
 import { BrowserRouter } from "react-router-dom";
-import { CartProvider } from "./contexts/cart.context.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <CartProvider>
-          <App />
-        </CartProvider>
+        <App />
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
