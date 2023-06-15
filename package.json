@@ -12,6 +12,7 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^2.1.0",
     "@stripe/stripe-js": "^1.54.0",
+    "and": "^0.0.3",
     "dotenv": "^16.1.4",
     "firebase": "^9.22.1",
     "react": "^18.2.0",
@@ -30,8 +31,8 @@
     "vite-require": "^0.2.3"
   },
   "devDependencies": {
-    "@types/react": "^18.0.37",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.5",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
