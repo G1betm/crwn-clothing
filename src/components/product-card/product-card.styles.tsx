@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import {
   BaseButton,
   GoogleSignInButton,
@@ -38,6 +39,25 @@ export const ProductCardContainer = styled.div`
     ${InvetredButton} {
       opacity: 0.85;
       display: flex;
+    }
+  }
+
+  @media screen and (max-widt: 800px) {
+
+    button {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+      &:hover {
+        img {
+          opacity: unset;
+        }
+
+        button {
+          opacity: unset;
+        }
+      }
     }
   }
 `;
